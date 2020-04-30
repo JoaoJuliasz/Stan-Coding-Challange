@@ -4,7 +4,6 @@ import { Switch, Route } from 'react-router-dom';
 import Home from './Home/Home';
 import Series from './Series/Series';
 import Movies from './Movies/Movies';
-import Header from '../components/Header/Header'
 
 const Container = () => (
     <Switch>

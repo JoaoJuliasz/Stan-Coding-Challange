@@ -1,7 +1,7 @@
 import React from 'react';
-
+import './Loader.css'
 const Loader = () => (
-    <div style={{margin: '40px', display: 'flex'}}>
+    <div className='loader'>
         Loading...
     </div>
 )

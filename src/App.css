@@ -7,6 +7,32 @@
   pointer-events: none;
 }
 
+.flex {
+  display: flex;
+}
+
+.imagesTemplate {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+}
+
+.cardsComponents {
+  padding-top: 5px;
+   text-align: center;
+}
+
+.imgs{
+  width: 200px
+}
+
+@media (max-width: 767px){
+  .imagesTemplate{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

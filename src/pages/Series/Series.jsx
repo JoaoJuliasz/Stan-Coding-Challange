@@ -37,11 +37,11 @@ class Series extends React.Component {
         }else{
         if(!this.state.err){
         return (
-            <div style={{display: 'grid', gridTemplateColumns: '1fr 1fr 1fr 1fr', justifyItems: 'center'}}>
+            <div className='imagesTemplate'>
                 {this.state.series.map(serie => 
                 serie.releaseYear >= 2010 ?
-                    <div style={{paddingTop: '5px', textAlign: 'center'}}>
-                    <img style={{width: '200px'}}src={serie.images.PosterArt.url}alt=""/>
+                    <div className='cardsComponents'>
+                    <img className='imgs' src={serie.images.PosterArt.url}alt=""/>
                     <p>{serie.title}</p>
                     </div>
                     : null)

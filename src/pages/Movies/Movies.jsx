@@ -39,11 +39,11 @@ class Movies extends React.Component {
         } else {
             if (!this.state.err) {
                 return (
-                    <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr 1fr', justifyItems: 'center' }}>
+                    <div className='imagesTemplate'>
                         {this.state.movies.map((movie, index) =>
                             movie.releaseYear >= 2010 && index <= 21 ?
-                                <div style={{ textAlign: 'center', paddingTop: '5px' }}>
-                                    <img style={{ width: '200px' }} src={movie.images.PosterArt.url} alt="" />
+                                <div className='cardsComponents'>
+                                    <img className='imgs' src={movie.images.PosterArt.url} alt="" />
                                     <p>{movie.title}</p>
                                 </div>
                                 : null
