@@ -54,7 +54,7 @@ class Series extends React.Component {
                         <SearchField handleChange={this.handleChange} type='serie' />
                         <div className='imagesTemplate'>
                             {filteredSeries.map((serie, index) =>
-                                serie.releaseYear >= 2010 && index <= 21 ?
+                                serie.releaseYear >= 2010?
                                     <Serie key={index} serie={serie} /> : null
                             )}
 

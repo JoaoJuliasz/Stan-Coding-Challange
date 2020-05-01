@@ -23,7 +23,7 @@ class Movies extends React.Component {
             .then(response => response.json())
             .then(data => {
                 this.setState({
-                    movies: data.entries.filter((data) => data.programType == 'movie'),
+                    movies: data.entries.filter((data) => data.programType === 'movie'),
                     loading: false,
                 },
                 )
@@ -45,7 +45,6 @@ class Movies extends React.Component {
         const filteredMovie = movies.filter(movie => 
             movie.title.toLowerCase().includes(this.state.searchField.toLocaleLowerCase())
         )
-        console.warn(filteredMovie)
         if (this.state.loading) {
             return (
                 <Loader />
@@ -58,7 +57,7 @@ class Movies extends React.Component {
                     <div className='imagesTemplate'>
                     {filteredMovie.map((movie, index) => 
                     movie.releaseYear >= 2010 && index <= 21 ?
-                    <Movie movie={movie} index={index}/> : null
+                    <Movie key={index} movie={movie}/> : null
                     )}</div>
                     </>
                 );

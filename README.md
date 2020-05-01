@@ -12,6 +12,6 @@ How did you decide on the technical and architectural choices used as part of yo
 To solve this, i used React and it dependencies. I broke the project in Pages and Components, each with own styles.
 To the routes, i just used React Router.
 
-What would you do differently if you were allocated more time?
+What would you do differently if you were allocated more time?(this is for commits until commit df57b0c)
  - I Would change the interface styles.
  - Make a better logic in Header Component.
